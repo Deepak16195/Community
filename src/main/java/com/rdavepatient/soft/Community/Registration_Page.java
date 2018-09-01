@@ -71,24 +71,7 @@ public class Registration_Page extends AppCompatActivity {
         });
     }
 
-    public void animateRevealShow() {
-        Animator mAnimator = ViewAnimationUtils.createCircularReveal(cvAdd, cvAdd.getWidth()/2,0, fab.getWidth() / 2, cvAdd.getHeight());
-        mAnimator.setDuration(500);
-        mAnimator.setInterpolator(new AccelerateInterpolator());
-        mAnimator.addListener(new AnimatorListenerAdapter() {
-            @Override
-            public void onAnimationEnd(Animator animation) {
-                super.onAnimationEnd(animation);
-            }
 
-            @Override
-            public void onAnimationStart(Animator animation) {
-                cvAdd.setVisibility(View.VISIBLE);
-                super.onAnimationStart(animation);
-            }
-        });
-        mAnimator.start();
-    }
 
     public void animateRevealClose() {
         Animator mAnimator = ViewAnimationUtils.createCircularReveal(cvAdd,cvAdd.getWidth()/2,0, cvAdd.getHeight(), fab.getWidth() / 2);
@@ -113,5 +96,25 @@ public class Registration_Page extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         animateRevealClose();
+    }
+
+
+    public void animateRevealShow() {
+        Animator mAnimator = ViewAnimationUtils.createCircularReveal(cvAdd, cvAdd.getWidth()/2,0, fab.getWidth() / 2, cvAdd.getHeight());
+        mAnimator.setDuration(500);
+        mAnimator.setInterpolator(new AccelerateInterpolator());
+        mAnimator.addListener(new AnimatorListenerAdapter() {
+            @Override
+            public void onAnimationEnd(Animator animation) {
+                super.onAnimationEnd(animation);
+            }
+
+            @Override
+            public void onAnimationStart(Animator animation) {
+                cvAdd.setVisibility(View.VISIBLE);
+                super.onAnimationStart(animation);
+            }
+        });
+        mAnimator.start();
     }
 }
