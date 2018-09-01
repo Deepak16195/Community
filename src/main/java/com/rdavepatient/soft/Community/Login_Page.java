@@ -37,6 +37,16 @@ public class Login_Page extends AppCompatActivity {
     }
 
     private void setListener() {
+
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                getWindow().setExitTransition(null);
+                getWindow().setEnterTransition(null);
+                ActivityOptions options = ActivityOptions.makeSceneTransitionAnimation(Login_Page.this, fab, fab.getTransitionName());
+                startActivity(new Intent(Login_Page.this, Registration_Page.class), options.toBundle());
+            }
+        });
         btGo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -50,15 +60,7 @@ public class Login_Page extends AppCompatActivity {
                 startActivity(i2, oc2.toBundle());
             }
         });
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                getWindow().setExitTransition(null);
-                getWindow().setEnterTransition(null);
-                ActivityOptions options = ActivityOptions.makeSceneTransitionAnimation(Login_Page.this, fab, fab.getTransitionName());
-                startActivity(new Intent(Login_Page.this, Registration_Page.class), options.toBundle());
-            }
-        });
+
     }
 
     @Override
