@@ -1,10 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimary">#8B4513</color>
+    <color name="colorPrimaryDark">#8B4513</color>
+    <color name="colorAccent">#8B4513</color>
+    <color name="red">#ff0000</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="off_white_background">#eeeeee</color>
+    <color name="color_gray">#FF7B7676</color>
+    <color name="color_darkgray">#424242</color>
+    <color name="color_darkhome">#d2d2d2</color>
 
 
+    <!--<color name="Bgcolorline">#2d529c</color>-->
+
+    <color name="Bgcolorline">#8B4513</color>
+
+    <color name="Bgtollbar">#1e1e1e</color>
+    <color name="divider">#424242</color>
+    <color name="yellow">#FFD812</color>
+    <color name="skeleton">#ff000000</color>
+    <color name="dirycolor">#8B4513</color>
 
     <!-- Screens background color-->
     <color name="bg_screen1">#f64c73</color>

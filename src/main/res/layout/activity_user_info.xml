@@ -32,7 +32,7 @@
                 android:padding="20.0dip">
 
                 <android.support.design.widget.TextInputLayout
-                 android:id="@+id/name_input_layout"
+                    android:id="@+id/name_input_layout"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10.0dip">
@@ -46,11 +46,12 @@
                         android:maxLength="30"
                         android:maxLines="1"
                         android:singleLine="true"
-                        android:textAppearance="?android:textAppearanceSmall" />
+                        android:textAppearance="?android:textAppearanceSmall"
+                        android:visibility="gone" />
                 </android.support.design.widget.TextInputLayout>
 
                 <android.support.design.widget.TextInputLayout
-                 android:id="@+id/password_input_layout"
+                    android:id="@+id/password_input_layout"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content">
 
@@ -63,7 +64,8 @@
                         android:maxLength="20"
                         android:maxLines="1"
                         android:singleLine="true"
-                        android:textAppearance="?android:textAppearanceSmall" />
+                        android:textAppearance="?android:textAppearanceSmall"
+                        android:visibility="gone" />
                 </android.support.design.widget.TextInputLayout>
 
                 <android.support.design.widget.TextInputLayout
@@ -72,7 +74,7 @@
                     android:layout_height="wrap_content">
 
                     <com.rdavepatient.soft.Community.Acitvity.FontAutoCompleteTextView
-                       android:id="@+id/et_age"
+                        android:id="@+id/et_age"
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
                         android:hint="Age"
@@ -84,7 +86,7 @@
                 </android.support.design.widget.TextInputLayout>
 
                 <com.rdavepatient.soft.Community.Acitvity.FontAutoCompleteTextView
-                   android:id="@+id/textView10"
+                    android:id="@+id/textView10"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10.0dip"
@@ -93,7 +95,7 @@
                     android:textSize="12.0dip" />
 
                 <Spinner
-                   android:id="@+id/sp_gender"
+                    android:id="@+id/sp_gender"
                     style="@style/Widget.AppCompat.Spinner.Underlined"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
@@ -147,7 +149,7 @@
                     android:layout_marginTop="15.0dip">
 
                     <com.rdavepatient.soft.Community.Acitvity.FontAutoCompleteTextView
-                      android:id="@+id/et_mobile"
+                        android:id="@+id/et_mobile"
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
                         android:hint="Mobile Number"
@@ -159,7 +161,7 @@
                 </android.support.design.widget.TextInputLayout>
 
                 <android.support.design.widget.TextInputLayout
-                   android:id="@+id/email_input_layout"
+                    android:id="@+id/email_input_layout"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content">
 
@@ -181,7 +183,7 @@
                     android:layout_height="wrap_content">
 
                     <com.rdavepatient.soft.Community.Acitvity.FontAutoCompleteTextView
-                       android:id="@+id/et_address"
+                        android:id="@+id/et_address"
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
                         android:hint="City/Address"
@@ -193,7 +195,7 @@
                 </android.support.design.widget.TextInputLayout>
 
                 <android.support.design.widget.TextInputLayout
-                   android:id="@+id/district_input_layout"
+                    android:id="@+id/district_input_layout"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content">
 
@@ -215,7 +217,7 @@
                     android:layout_height="wrap_content">
 
                     <com.rdavepatient.soft.Community.Acitvity.FontAutoCompleteTextView
-                       android:id="@+id/et_state"
+                        android:id="@+id/et_state"
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
                         android:hint="State"
@@ -231,7 +233,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20.0dip"
                     android:gravity="center"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:visibility="gone">
 
                     <com.rdavepatient.soft.Community.Ui.FontTextView
                         android:layout_width="wrap_content"
@@ -239,7 +242,7 @@
                         android:text="Last Donation Details" />
 
                     <CheckBox
-                       android:id="@+id/chk"
+                        android:id="@+id/chk"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10.0dip"
@@ -258,7 +261,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5.0dip"
                     android:text="Donation Type"
-                    android:textSize="12.0dip" />
+                    android:textSize="12.0dip"
+                    android:visibility="gone" />
 
                 <Spinner
                     android:id="@+id/sp_donation_type"
@@ -270,7 +274,8 @@
                     android:entries="@array/array_donation_type"
                     android:inputType="numberSigned"
                     android:maxLength="4"
-                    android:textSize="18.0dip" />
+                    android:textSize="18.0dip"
+                    android:visibility="gone" />
 
                 <android.support.design.widget.TextInputLayout
                     android:id="@+id/last_donation_date_input_layout"
@@ -315,7 +320,8 @@
                     android:textAppearance="?android:textAppearanceMedium"
                     android:textColor="@color/colorPrimaryDark"
                     android:textSize="20.0dip"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:visibility="gone" />
             </LinearLayout>
         </android.support.v7.widget.CardView>
     </ScrollView>
